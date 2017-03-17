@@ -295,9 +295,7 @@ The BAT will, in early stages, be specifically tied to Brave browsers and Brave 
 
 Publisher payment will be through the BAT system. For the first deployment of BAT, the transactions in BAT will take place through the Brave Ledger system, which is an open source zero knowledge proof scheme presently deployed to allow Brave users to make anonymous donations to publishers using bitcoin as the medium of exchange.  The Brave Ledger system uses the ANONIZE\cite{13} algorithm to protect user privacy. 
 
-For the first incarnation of BAT, all payments in BAT must have a publisher endpoint. BAT will work within the framework of Brave’s ``Know Your Publisher'' program, which prevents payments from being made to anyone but known and verified Publishers. Known and verified publishers will have filled out W9/W8-BEN(E) tax paperwork for payments. Large settlements require publishers to complete a third-party photo ID verification process and provide a ``proof of physical address'' image. Large settlements with corporations require a document to be signed by two directors/officers and notarized, attesting that the funds will only be used for content monetization. This document will be delivered via a postal service along with a copy of the corporate entity’s articles of incorporation. Updates to this document may be uploaded via a web service. This system will ensure that the BAT token will only be given to legitimate Brave users and can only be spent by Brave users on legitimate publisher services.
-
-The \href{https://github.com/brave/ledger-publisher}{publisher client} as it is coded today already measures user attention as described above. The “concave” awarding mechanism calculates an attention score based on a fixed threshold value for opening and viewing the page for a minimum of 25 seconds, and a bounded score for the amount of time spent on the page. A synopsis of user behavior is then sent back to the Brave Ledger System for recording and payments made on the basis of the scores.
+For the first incarnation of BAT, all payments in BAT must have a publisher endpoint. The \href{https://github.com/brave/ledger-publisher}{publisher client} as it is coded today already measures user attention as described above. The “concave” awarding mechanism calculates an attention score based on a fixed threshold value for opening and viewing the page for a minimum of 25 seconds, and a bounded score for the amount of time spent on the page. A synopsis of user behavior is then sent back to the Brave Ledger System for recording and payments made on the basis of the scores.
 
 Much of the infrastructure required to deploy BAT at the back end is presently “code complete,” in place and being used to distribute donations based on user attention. As such, this infrastructure will be leveraged to deploy BAT as soon as possible for testing, user, and advertiser feedback.
 
@@ -320,19 +318,14 @@ Higher quality content may also be offered to users for a BAT transaction. For e
 
 Comments may be ranked or voted on using BAT tokens, similar to the “thumbsup/thumbsdown” on some comment sections. Comment votes backed by BAT may be given more credibility due to the fact that someone cared enough to back the comment with what would be a limited supply of token, as well as the fact that a token transfer can be verified as coming from real people rather than robots. The right to post comments may also be purchased for some minimal payment, to cut down on abusive commenters.
 
-Tokens may be used to purchase digital goods such as high resolution photos, data services, or publisher applications which are only needed on a one time basis. Many publishers have access to interesting data sets and tools which they are not able to monetize on a subscription basis, but which individuals may wish to occasionally use. For example, firms like Pro Publica, Citzen Audit and Gartner contains both interesting public data and premium content which most individuals are unable to afford a subscription to, but which may be useful to individuals. Small parts of news archives may also be of interest to people who do not want to purchase access or a subscription to the entire archive.
 
-Token may be used in games provided by publishers. While such applications are not presently popular with publishers, many platform providers have hosted profitable gaming applications. It could create a new economy of app creators to go along with content. For example, “punch the political/entertainment figure” games to go along with critical articles. People won’t get out their credit card to use such an application, but they may be willing to part with some value they acquired in normal browsing activities to enjoy punching their favorite entertainment figure.
-
-Custom news alerts may be offered as a service by news providers for a small payment. Such news alerts may be very valuable to individuals who are concerned with current events, financial news or some anticipated event. 
 \subsection{Roadmap}
 \label{sec-4-5}
 \begin{itemize}
 \item{Pre 1.0 Brave already has an anonymized ledger system for making donations and payments to publishers based on user attention. The secure vault using the ANONYZE algorithm to ensure customer privacy is an important piece of the BAT ecosystem which is already in place and deployed in Brave. Brave is already measuring user attention at the browser and distributing donations to the publishers using this system.}
 \item{1.0 BAT: BAT wallet integrated with the Brave browser. Verification and transactions to be handled by Brave’s internal zero knowledge proof ledger system to protect individual user anonymity from advertisers, publishers and third parties. The ads will be bought and sold based on the first version of the Basic Attention Metric (BAM). }
 \item{Beyond 1.0 BAT: Make the transfer and verification process entirely distributed on Ethereum using a state channel scheme with zero knowledge proof protocol for ensuring user privacy. Add alternate BAM metrics based on advertiser feedback. This will allow for full user privacy as well as a decentralized audit trail for advertisers, users and publishers to ensure they received correct payments for the advertising delivered through the BAT network.}
-\item{Browser as platform/BAT:  Further BAM metrics based on advertiser feedback as needed. Partners building applications on the BAT infrastructure. Future iterations on the brave wallet may make peer to
-peer payments and conversion to fiat possible. Also, at this point we plan to explore value-added services that can be offered to users on the browser platform through BAT.}
+\item{Browser as platform/BAT:  Further BAM metrics based on advertiser feedback as needed. Partners building applications on the BAT infrastructure. Also, at this point we plan to explore value-added services that can be offered to users on the browser platform through BAT.}
 \end{itemize}
 
 
@@ -410,11 +403,11 @@ Brave thus aims to reset the online ad-based Web ecosystem, giving advertisers, 
 At the end of the token launch, token will be released as follows:
 \begin{itemize}
 \item{Brave: 15\% (Locked for 6 months)}
-\item{User growth fund: 15\%}
+\item{User growth pool: 15\%}
 \item{Token available to public at launch: 70\% (corresponding to the ETH raised at token launch)}
 \end{itemize}
 
-\subsection{User Growth Fund}
+\subsection{User Growth Pool}
 \label{sec-6-3}
 User growth fund is used to incentivize users to participate in the BAT ecosystem.
 \begin{itemize}
@@ -422,7 +415,7 @@ User growth fund is used to incentivize users to participate in the BAT ecosyste
 \item{BAT received as a reward can only be used within the BAT ecosystem for value added services}
 \item{Unused BAT after 6 months will be sent back to the user growth fund which can then be used for new users}
 \item{Existing Brave users can get tokens by updating their app and verifying phone number}
-\item{No new tokens will be created once the user growth fund is exhausted.}
+\item{No new tokens will be created once the user growth pool is exhausted.}
 \end{itemize}
 
 \subsection{Budget Allocation}
@@ -612,9 +605,7 @@ researchers and interested parties on the advertiser and publisher sides.
 
 Since the transactions for the first deployment of BAT will happen
 through the Brave Ledger, which has privacy and deterministic user
-anonymity by design, and since Brave has a “know your publisher”
-program for verifying publishers are who they say they are, full
-transparency can be achieved while user privacy is maintained. While this 
+anonymity by design, full transparency can be achieved while user privacy is maintained. While this 
 centralized solution should fulfill all economic and technical goals, for further iterations, a fully
 decentralized solution could be developed to allow for trustless
 auditable transactions.
@@ -856,11 +847,7 @@ encapsulates the insight that a lack of money in circulation will
 raise the exchange rate.
 
 We now turn our attention to the fraction of BAT which is not used for
-exchange. People who hold BAT are doing so in hopes that it may be
-more useful in the future. Since the primary driver of BAT value is
-its utility in intermediating transactions between advertisers, users
-and publishers, it can be considered to be a position on future
-transactions in the Brave Advertising Network. Some of the $Z^{BAT}_{t}$ tokens may
+exchange. Some of the $Z^{BAT}_{t}$ tokens may
 be the result of users forgetting about the small number of tokens
 they hold. Some may be due to exchange delays in settlement for legacy
 currencies. Overall though, the holders of inactive tokens have
