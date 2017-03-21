@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  17 MAR 2017 15:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  20 MAR 2017 19:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -542,7 +542,7 @@ File: english.lbx 2016/05/14 v3.4 biblatex localization (PK/JW/AB)
 \@quotelevel=\count311
 \@quotereset=\count312
 
-No file BasicAttnTokenWhitePaper.aux.
+(./BasicAttnTokenWhitePaper.aux)
 \openout1 = `BasicAttnTokenWhitePaper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -559,6 +559,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
+
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count313
@@ -601,6 +602,8 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 21.
 LaTeX Info: Redefining \pageref on input line 21.
 LaTeX Info: Redefining \nameref on input line 21.
+
+(./BasicAttnTokenWhitePaper.out) (./BasicAttnTokenWhitePaper.out)
 \@outlinefile=\write5
 \openout5 = `BasicAttnTokenWhitePaper.out'.
 
@@ -653,9 +656,14 @@ Package biblatex Info: ... file 'BasicAttnTokenWhitePaper.bbl' not found.
 No file BasicAttnTokenWhitePaper.bbl.
 Package biblatex Info: Reference section=0 on input line 21.
 Package biblatex Info: Reference segment=0 on input line 21.
+[1
+
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./BasicAttnTokenWhitePaper.toc)
 \tf@toc=\write6
 \openout6 = `BasicAttnTokenWhitePaper.toc'.
 
+ [2]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -665,15 +673,13 @@ Missing character: There is no ù in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 73.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 78.
+
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 73.
- [1
-
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 78.
 Missing character: There is no ‚ in font cmti10!
 Missing character: There is no Ä in font cmti10!
 Missing character: There is no ú in font cmti10!
@@ -686,6 +692,7 @@ Missing character: There is no ô in font cmti10!
 Missing character: There is no ‚ in font cmti10!
 Missing character: There is no Ä in font cmti10!
 Missing character: There is no ù in font cmti10!
+ [3]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -712,7 +719,7 @@ Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
 
-LaTeX Warning: Citation '1' on page 2 undefined on input line 84.
+LaTeX Warning: Citation '1' on page 4 undefined on input line 89.
 
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -727,44 +734,42 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-LaTeX Warning: Citation '2' on page 2 undefined on input line 92.
+LaTeX Warning: Citation '2' on page 4 undefined on input line 97.
 
 
-LaTeX Warning: Citation '3' on page 2 undefined on input line 94.
+LaTeX Warning: Citation '3' on page 4 undefined on input line 99.
 
-[2]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
+LaTeX Warning: Citation '4' on page 4 undefined on input line 101.
 
-LaTeX Warning: Citation '4' on page 3 undefined on input line 96.
-
-<./WP_images/lumascape_recolored.png, id=24, 1707.37875pt x 1023.825pt>
+[4] <./WP_images/lumascape_recolored.png, id=154, 1707.37875pt x 1023.825pt>
 File: ./WP_images/lumascape_recolored.png Graphic file (type png)
 
 <use ./WP_images/lumascape_recolored.png>
 Package pdftex.def Info: ./WP_images/lumascape_recolored.png used on input line
- 106.
+ 111.
 (pdftex.def)             Requested size: 373.61061pt x 224.02365pt.
- [3]
-<./WP_images/typical_display_adflow.png, id=31, 1889.0575pt x 935.495pt>
+ [5 <./WP_images/lumascape_recolored.png>] <./WP_images/typical_display_adflow.
+png, id=161, 1889.0575pt x 935.495pt>
 File: ./WP_images/typical_display_adflow.png Graphic file (type png)
 
 <use ./WP_images/typical_display_adflow.png>
 Package pdftex.def Info: ./WP_images/typical_display_adflow.png used on input l
-ine 113.
+ine 118.
 (pdftex.def)             Requested size: 373.61061pt x 185.0116pt.
 
-<./WP_images/tracking_map.png, id=32, 1680.2775pt x 1146.2825pt>
+<./WP_images/tracking_map.png, id=162, 1680.2775pt x 1146.2825pt>
 File: ./WP_images/tracking_map.png Graphic file (type png)
 
 <use ./WP_images/tracking_map.png>
-Package pdftex.def Info: ./WP_images/tracking_map.png used on input line 122.
+Package pdftex.def Info: ./WP_images/tracking_map.png used on input line 127.
 (pdftex.def)             Requested size: 373.61061pt x 254.87651pt.
 
 
-LaTeX Warning: Citation '5' on page 4 undefined on input line 127.
+LaTeX Warning: Citation '5' on page 6 undefined on input line 132.
 
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -773,7 +778,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-LaTeX Warning: Citation '6' on page 4 undefined on input line 127.
+LaTeX Warning: Citation '6' on page 6 undefined on input line 132.
 
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -800,17 +805,16 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-LaTeX Warning: Citation '7' on page 4 undefined on input line 129.
+LaTeX Warning: Citation '7' on page 6 undefined on input line 134.
 
-[4 <./WP_images/lumascape_recolored.png>] [5 <./WP_images/typical_display_adflo
-w.png> <./WP_images/tracking_map.png>]
-<./WP_images/data_transfer_news_sites.png, id=46, 1876.00874pt x 1035.87pt>
+<./WP_images/data_transfer_news_sites.png, id=163, 1876.00874pt x 1035.87pt>
 File: ./WP_images/data_transfer_news_sites.png Graphic file (type png)
 
 <use ./WP_images/data_transfer_news_sites.png>
 Package pdftex.def Info: ./WP_images/data_transfer_news_sites.png used on input
- line 133.
+ line 138.
 (pdftex.def)             Requested size: 373.61061pt x 206.28519pt.
+ [6 <./WP_images/typical_display_adflow.png>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -819,14 +823,14 @@ Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
 
-LaTeX Warning: Citation '8' on page 6 undefined on input line 140.
+LaTeX Warning: Citation '8' on page 7 undefined on input line 145.
 
-<./WP_images/hitbymalvertising.png, id=47, 1753.55125pt x 948.54375pt>
+<./WP_images/hitbymalvertising.png, id=171, 1753.55125pt x 948.54375pt>
 File: ./WP_images/hitbymalvertising.png Graphic file (type png)
 
 <use ./WP_images/hitbymalvertising.png>
 Package pdftex.def Info: ./WP_images/hitbymalvertising.png used on input line 1
-46.
+51.
 (pdftex.def)             Requested size: 373.61061pt x 202.09477pt.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -848,14 +852,14 @@ Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
 
-LaTeX Warning: Citation '9' on page 6 undefined on input line 155.
+LaTeX Warning: Citation '9' on page 7 undefined on input line 160.
 
-<./WP_images/cost_to_load_ads.png, id=48, 1377.145pt x 955.57pt>
+<./WP_images/cost_to_load_ads.png, id=172, 1377.145pt x 955.57pt>
 File: ./WP_images/cost_to_load_ads.png Graphic file (type png)
 
 <use ./WP_images/cost_to_load_ads.png>
 Package pdftex.def Info: ./WP_images/cost_to_load_ads.png used on input line 16
-0.
+5.
 (pdftex.def)             Requested size: 373.61061pt x 259.23213pt.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -863,28 +867,31 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [6 <./WP_images/data_transfer_news_sites.png>] [7 <./WP_images/hitbymalvertisi
-ng.png> <./WP_images/cost_to_load_ads.png>]
-<./WP_images/adblock_growth_by_device.png, id=65, 1908.12875pt x 1131.22626pt>
+ [7 <./WP_images/tracking_map.png>]
+[8 <./WP_images/data_transfer_news_sites.png> <./WP_images/hitbymalvertising.pn
+g>]
+<./WP_images/adblock_growth_by_device.png, id=189, 1908.12875pt x 1131.22626pt>
 File: ./WP_images/adblock_growth_by_device.png Graphic file (type png)
-
 <use ./WP_images/adblock_growth_by_device.png>
 Package pdftex.def Info: ./WP_images/adblock_growth_by_device.png used on input
- line 175.
+ line 180.
 (pdftex.def)             Requested size: 373.61061pt x 221.49443pt.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no ‚ in font cmr10!
 
 
-LaTeX Warning: Citation '10' on page 8 undefined on input line 180.
+LaTeX Warning: Citation '10' on page 9 undefined on input line 186.
 
 
-LaTeX Warning: Citation '11' on page 8 undefined on input line 180.
+LaTeX Warning: Citation '11' on page 9 undefined on input line 186.
 
 
-<./WP_images/adblock_usage_demographics.png, id=66, 1809.76125pt x 888.31876pt>
+<./WP_images/adblock_usage_demographics.png, id=190, 1809.76125pt x 888.31876pt
+>
 File: ./WP_images/adblock_usage_demographics.png Graphic file (type png)
-<use ./WP_images/adblock_usage_demographics.png>
+ <use ./WP_images/adblock_usage_demographics.png>
 Package pdftex.def Info: ./WP_images/adblock_usage_demographics.png used on inp
-ut line 186.
+ut line 192.
 (pdftex.def)             Requested size: 373.61061pt x 183.38066pt.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -894,37 +901,38 @@ Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
 
-LaTeX Warning: Citation '12' on page 8 undefined on input line 193.
+LaTeX Warning: Citation '12' on page 9 undefined on input line 199.
 
 
-LaTeX Warning: Citation 'SocMed' on page 8 undefined on input line 194.
+LaTeX Warning: Citation 'SocMed' on page 9 undefined on input line 200.
 
 
-LaTeX Warning: Citation 'DCN' on page 8 undefined on input line 194.
+LaTeX Warning: Citation 'DCN' on page 9 undefined on input line 200.
 
-[8 <./WP_images/adblock_growth_by_device.png>]
-<./WP_images/google_FB_everyone.png, id=73, 1801.73125pt x 824.07875pt>
+[9 <./WP_images/cost_to_load_ads.png>] [10 <./WP_images/adblock_growth_by_devic
+e.png> <./WP_images/adblock_usage_demographics.png>]
+<./WP_images/google_FB_everyone.png, id=205, 1801.73125pt x 824.07875pt>
 File: ./WP_images/google_FB_everyone.png Graphic file (type png)
 
 <use ./WP_images/google_FB_everyone.png>
 Package pdftex.def Info: ./WP_images/google_FB_everyone.png used on input line 
-199.
+205.
 (pdftex.def)             Requested size: 373.61061pt x 170.87369pt.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
 
-LaTeX Warning: Citation 'WithoutValue' on page 9 undefined on input line 206.
+LaTeX Warning: Citation 'WithoutValue' on page 11 undefined on input line 212.
 
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-<./WP_images/newspaperadrev.png, id=74, 1845.89626pt x 982.67125pt>
+<./WP_images/newspaperadrev.png, id=206, 1845.89626pt x 982.67125pt>
 File: ./WP_images/newspaperadrev.png Graphic file (type png)
 
 <use ./WP_images/newspaperadrev.png>
-Package pdftex.def Info: ./WP_images/newspaperadrev.png used on input line 213.
+Package pdftex.def Info: ./WP_images/newspaperadrev.png used on input line 219.
 
 (pdftex.def)             Requested size: 373.61061pt x 198.88487pt.
 Missing character: There is no ‚ in font cmr10!
@@ -935,18 +943,34 @@ Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
 
-LaTeX Warning: Citation 'Gartner1' on page 9 undefined on input line 220.
+LaTeX Warning: Citation 'Gartner1' on page 11 undefined on input line 226.
 
 
-LaTeX Warning: Citation 'Econsul' on page 9 undefined on input line 220.
+LaTeX Warning: Citation 'Econsul' on page 11 undefined on input line 226.
 
-[9 <./WP_images/adblock_usage_demographics.png>] [10 <./WP_images/google_FB_eve
-ryone.png> <./WP_images/newspaperadrev.png>]
-Overfull \hbox (1.32967pt too wide) in paragraph at lines 225--226
+
+Overfull \hbox (1.32967pt too wide) in paragraph at lines 231--232
 \OT1/cmr/m/n/10.95 some sort of sim-pli-fi-ca-tion of the present on-line ad-ve
 r-tis-ing ecosys-tem in-evitable. Present
  []
 
+[11 <./WP_images/google_FB_everyone.png>]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [12 <./WP_images/newspaperadrev.png>]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
@@ -962,71 +986,26 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-[11]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
- <./WP_images/BAM_score_over_time.png, id=95, 1442.38875pt x 969.6225pt>
+[13] <./WP_images/BAM_score_over_time.png, id=227, 1442.38875pt x 969.6225pt>
 File: ./WP_images/BAM_score_over_time.png Graphic file (type png)
 
 <use ./WP_images/BAM_score_over_time.png>
 Package pdftex.def Info: ./WP_images/BAM_score_over_time.png used on input line
- 261.
+ 267.
 (pdftex.def)             Requested size: 373.61061pt x 251.149pt.
- [12]
-<./WP_images/BAT_tokentech_diagram.png, id=105, 1622.06pt x 1029.8475pt>
+ [14 <./WP_images/BAM_score_over_time.png>] <./WP_images/BAT_tokentech_diagram.
+png, id=235, 1622.06pt x 1029.8475pt>
 File: ./WP_images/BAT_tokentech_diagram.png Graphic file (type png)
 
 <use ./WP_images/BAT_tokentech_diagram.png>
 Package pdftex.def Info: ./WP_images/BAT_tokentech_diagram.png used on input li
-ne 282.
+ne 288.
 (pdftex.def)             Requested size: 373.61061pt x 237.20566pt.
- [13 <./WP_images/BAM_score_over_time.png>]
-
-LaTeX Warning: Citation '13' on page 14 undefined on input line 296.
-
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-[14 <./WP_images/BAT_tokentech_diagram.png>]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
 
 
-LaTeX Warning: Citation '14' on page 15 undefined on input line 305.
+LaTeX Warning: Citation '13' on page 15 undefined on input line 302.
 
-
-LaTeX Warning: Citation '15' on page 15 undefined on input line 305.
-
-
-LaTeX Warning: Citation '16' on page 15 undefined on input line 305.
-
-
-LaTeX Warning: Citation '17' on page 15 undefined on input line 305.
-
-
-LaTeX Warning: Citation '18' on page 15 undefined on input line 305.
-
-[15]
+[15 <./WP_images/BAT_tokentech_diagram.png>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -1035,11 +1014,33 @@ Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
- [16]
+Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+
+LaTeX Warning: Citation '14' on page 16 undefined on input line 311.
+
+
+LaTeX Warning: Citation '15' on page 16 undefined on input line 311.
+
+
+LaTeX Warning: Citation '16' on page 16 undefined on input line 311.
+
+
+LaTeX Warning: Citation '17' on page 16 undefined on input line 311.
+
+
+LaTeX Warning: Citation '18' on page 16 undefined on input line 311.
+
+[16]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
@@ -1047,66 +1048,70 @@ Missing character: There is no ô in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [18] [19]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 435--450
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 435--450
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 435--450
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 435--450
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 435--450
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 435--450
-
- []
-
-[20]
-
-LaTeX Warning: Citation '19' on page 21 undefined on input line 457.
-
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
+ [18] [19] [20]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 447--462
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 447--462
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 447--462
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 447--462
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 447--462
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 447--462
+
+ []
+
 [21]
+
+LaTeX Warning: Citation '19' on page 22 undefined on input line 469.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+[22]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+ [23]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
@@ -1134,24 +1139,25 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [22]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
+ [24]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-<./WP_images/BAT_digital_ad_flow.png, id=180, 1902.10625pt x 1193.45876pt>
+<./WP_images/BAT_digital_ad_flow.png, id=292, 1902.10625pt x 1193.45876pt>
 File: ./WP_images/BAT_digital_ad_flow.png Graphic file (type png)
 
 <use ./WP_images/BAT_digital_ad_flow.png>
 Package pdftex.def Info: ./WP_images/BAT_digital_ad_flow.png used on input line
- 585.
+ 592.
 (pdftex.def)             Requested size: 373.61061pt x 234.408pt.
+ [25 <./WP_images/BAT_digital_ad_flow.png>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
@@ -1164,46 +1170,40 @@ Missing character: There is no ô in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [23]
 
-LaTeX Warning: Citation '20' on page 24 undefined on input line 635.
 
-[24 <./WP_images/BAT_digital_ad_flow.png>]
+LaTeX Warning: Citation '20' on page 26 undefined on input line 642.
+
+[26]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [25]
-<./WP_images/topreasons_to_block.png, id=197, 1953.2975pt x 1035.87pt>
+ [27]
+<./WP_images/topreasons_to_block.png, id=309, 1953.2975pt x 1035.87pt>
 File: ./WP_images/topreasons_to_block.png Graphic file (type png)
 
 <use ./WP_images/topreasons_to_block.png>
 Package pdftex.def Info: ./WP_images/topreasons_to_block.png used on input line
- 725.
+ 732.
 (pdftex.def)             Requested size: 373.61061pt x 198.12924pt.
- [26 <./WP_images/topreasons_to_block.png>]
+ [28 <./WP_images/topreasons_to_block.png>]
 
-LaTeX Warning: Citation '22' on page 27 undefined on input line 796.
+LaTeX Warning: Citation '22' on page 29 undefined on input line 803.
 
-[27] [28] [29]
+[29] [30]
 
-LaTeX Warning: Empty bibliography on input line 915.
+LaTeX Warning: Empty bibliography on input line 922.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 918.
-[30]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 918.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 925.
+[31]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 925.
  (./BasicAttnTokenWhitePaper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 918.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 918.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 925.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 925.
+Package rerunfilecheck Info: File `BasicAttnTokenWhitePaper.out' has not change
+d.
+(rerunfilecheck)             Checksum: 9E3713F741A99DFAC71790B2238B5668;1671.
 
-
-Package rerunfilecheck Warning: File `BasicAttnTokenWhitePaper.out' has changed
-.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `BasicAttnTokenWhitePaper.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  9E3713F741A99DFAC71790B2238B5668;1671.
 
 LaTeX Warning: There were undefined references.
 
@@ -1218,13 +1218,13 @@ Package biblatex Warning: Please (re)run BibTeX on the file(s):
 Package logreq Info: Writing requests to 'BasicAttnTokenWhitePaper.run.xml'.
 \openout1 = `BasicAttnTokenWhitePaper.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 918.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 925.
  ) 
 Here is how much of TeX's memory you used:
- 13155 strings out of 493014
- 213168 string characters out of 6133351
- 485840 words of memory out of 5000000
- 16495 multiletter control sequences out of 15000+600000
+ 13190 strings out of 493014
+ 213774 string characters out of 6133351
+ 487840 words of memory out of 5000000
+ 16521 multiletter control sequences out of 15000+600000
  10363 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  32i,9n,37p,957b,778s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1242,10 +1242,10 @@ live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texliv
 e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 /2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
 016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on BasicAttnTokenWhitePaper.pdf (30 pages, 4376153 bytes).
+Output written on BasicAttnTokenWhitePaper.pdf (31 pages, 4380941 bytes).
 PDF statistics:
- 289 PDF objects out of 1000 (max. 8388607)
- 212 compressed objects within 3 object streams
- 72 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 400 PDF objects out of 1000 (max. 8388607)
+ 321 compressed objects within 4 object streams
+ 73 named destinations out of 1000 (max. 500000)
+ 271 words of extra memory for PDF output out of 10000 (max. 10000000)
 
