@@ -287,7 +287,7 @@ The BAT will, in early stages, be specifically tied to Brave browsers and Brave 
 \subsection{Tokens Used as Publisher Payment}
 \label{sec-4-3}
 
-Publisher payment will be through the BAT system. For the first deployment of BAT, the transactions in BAT will take place through the Brave Ledger system, which is an open source zero knowledge proof scheme presently deployed to allow Brave users to make anonymous donations to publishers using bitcoin as the medium of exchange.  The Brave Ledger system uses the ANONIZE\cite{13} algorithm to protect user privacy. 
+Publisher payment will be through the BAT system. For the first deployment of BAT, the transactions in BAT will take place through the Brave Ledger system, which is an open source Zero Knowledge Proof scheme presently deployed to allow Brave users to make anonymous donations to publishers using bitcoin as the medium of exchange.  The Brave Ledger system uses the ANONIZE\cite{13} algorithm to protect user privacy. 
 
 For the first incarnation of BAT, all payments in BAT must have a publisher endpoint. The \href{https://github.com/brave/ledger-publisher}{publisher client} as it is coded today already measures user attention as described above. The “concave” awarding mechanism calculates an attention score based on a fixed threshold value for opening and viewing the page for a minimum of 25 seconds, and a bounded score for the amount of time spent on the page. A synopsis of user behavior is then sent back to the Brave Ledger System for recording and payments made on the basis of the scores.
 
@@ -296,7 +296,7 @@ Much of the infrastructure required to deploy BAT at the back end is presently �
 A fully distributed ledger is desirable, both for public accountability and potential scalability reasons. Publishers, advertisers and users of the BAT token will have incentive to use such a system to keep track of payments within the BAT system. 
 
 State channels allow for multiple small transactions with strong anonymity guarantees when using the correct matching algorithms. While Raiden and ZCash are new state channel schemes becoming integrated with the Ethereum ecosystem, it is likely that a new scheme addressing the unique problems of this type of transaction will be used for large scale multiparty transfer of BAT.
- A lottery system may be used, where small payments are made probabilistically, with payments happening essentially in the same way that coin mining works with proof of attention instead of proof of work\cite{14,15}, BOLT\cite{16}, Zero knowledge SNARK\cite{17} or STARK\cite{18} algorithms may become part of this stack for guarding privacy of participants. The BAT situation is mitigated by the fact that only the privacy of the browser customer is important; publishers and advertisers have fewer privacy concerns. The transactions in a fully distributed BAT system will almost always be one to many and many to one, therefore novel zero-knowledge transactions may be suggested by this arrangement.
+ A lottery system may be used, where small payments are made probabilistically, with payments happening essentially in the same way that coin mining works with proof of attention instead of proof of work\cite{14,15}, BOLT\cite{16}, Zero Knowledge SNARK\cite{17} or STARK\cite{18} algorithms may become part of this stack for guarding privacy of participants. The BAT situation is mitigated by the fact that only the privacy of the browser customer is important; publishers and advertisers have fewer privacy concerns. The transactions in a fully distributed BAT system will almost always be one to many and many to one, therefore novel zero-knowledge transactions may be suggested by this arrangement.
 
 As Brave moves to a fully distributed micropayment system, we expect other developers to use our free and open source infrastructure to develop their own use cases for BAT. We want BAT and the tools associated with it to eventually become important web standards for future development of web content. Publishers, advertisers and users who view web content deserve a private, secure and well-engineered future.
 \subsection{Tokens for User Applications}
@@ -322,8 +322,8 @@ Custom news alerts may be offered as a service by news providers for a small pay
 \label{sec-4-5}
 \begin{itemize}
 \item{Pre 1.0 BAT Brave already has an anonymized ledger system for making donations and payments to publishers based on user attention. The secure vault using the ANONYZE algorithm to ensure customer privacy is an important piece of the BAT ecosystem which is already in place and deployed in Brave. Brave is already measuring user attention at the browser and distributing donations to the publishers using this system.}
-\item{1.0 BAT: BAT wallet integrated with the Brave browser. Verification and transactions to be handled by Brave’s internal zero knowledge proof ledger system to protect individual user anonymity from advertisers, publishers and third parties.  Ad inventory will be valued, and transactions will be calculated from reported Basic Attention Metric (BAM) data. }
-\item{Beyond 1.0 BAT: Make the transfer and verification process entirely distributed on Ethereum using a state channel scheme with zero knowledge proof protocol for ensuring user privacy. Add alternate BAM metrics based on advertiser feedback. This will allow for full user privacy as well as a decentralized audit trail for advertisers, users and publishers to ensure they received correct payments for the advertising delivered through the BAT network.}
+\item{1.0 BAT: BAT wallet integrated with the Brave browser. Verification and transactions to be handled by Brave’s internal Zero Knowledge Proof ledger system to protect individual user anonymity from advertisers, publishers and third parties.  Ad inventory will be valued, and transactions will be calculated from reported Basic Attention Metric (BAM) data. }
+\item{Beyond 1.0 BAT: Make the transfer and verification process entirely distributed on Ethereum using a state channel scheme with Zero Knowledge Proof protocol for ensuring user privacy. Add alternate BAM metrics based on advertiser feedback. This will allow for full user privacy as well as a decentralized audit trail for advertisers, users and publishers to ensure they received correct payments for the advertising delivered through the BAT network.}
 \item{Browser as platform/BAT:  Further BAM metrics based on advertiser feedback as needed. Partners building applications on the BAT infrastructure. Also, at this point we plan to explore value-added services that can be offered to users on the browser platform through BAT.}
 \end{itemize}
 
@@ -747,8 +747,8 @@ So, our total social cost for the present online ad ecosystem is
  the ad itself. Since only a few bytes of data will need to be
  transferred to service the token, this cost will effectively only be
  in the downloading of the content of the advertisement; a
- considerable improvement. The use of cryptographic protocols and zero
- knowledge proofs, as well as the use of known publishers and
+ considerable improvement. The use of cryptographic protocols and Zero
+ Knowledge Proofs, as well as the use of known publishers and
  advertisers will also lower $P^{s}$ considerably.
 
 So, for a properly privacy protecting token system: 
