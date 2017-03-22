@@ -222,26 +222,26 @@ Ultimately, a publisher provides information which may be of value to the user. 
 
 Users thus suffer a form of ``electronic pollution'' consisting of threats to security, threats to privacy, costs in inefficient download times, financial costs in extra mobile data fees, and in the case of the many ads, excessive costs to their attention. Human attention can be exhausted, until dopamine levels recover. Neurons can and do learn to ignore ad slots (so-called ``banner blindness''). Abuse of user attention and permanent loss of users, via ad-slot blindness and ad-blocker adoption, make attention different from substitutable commodities such as pork bellies or crude oil, in the final analysis. While most users may be willing to pay some price for access to the publisher's information, user attention is mispriced when we sum up the growing negative externalities imposed by the present advertising ecosystem.
 
-\subsection{Basic Attention Metrics}
+\subsection{Basic Attention Metrics (BAM)}
 \label{sec-4-1}
 
 To improve the efficiency of digital advertising requires a new platform and unit of exchange. The first phase involves the roll-out of a new browser, Brave, a fast, open source, privacy-focused browser that blocks invasive ads and trackers, and contains a ledger system that anonymously captures user attention to accurately reward publishers. The next phase involves the introduction of Basic Attention Token or BAT. It is a token for the decentralized ad exchange. BAT connects advertisers, publishers, and users, creating a new, efficient marketplace. The token is based on Ethereum technology, an open source, blockchain-based distributed computing platform with smart contracts. These cryptographically secure smart contracts are stateful applications stored in the Ethereum blockchain, fully capable of enforcing performance. The token is derived from -- or denominated by -- user attention. Attention is really just focused mental engagement -- on an advertisement, in this case.
 
-The ability to anonymously monitor user intent at the browser allows for the development of rich metrics for user attention. For example, it is known whether an impression has been served to an active tab, and measure the seconds of active user engagement. Attention is measured as viewed for content and ads only in the browser's active tab in real time. The Attention Value for the ad will be calculated based on incremental duration and pixels in view in proportion to relevant content, prior to any direct engagement with the ad. We will define further anonymous cost-per-action models as the system develops.
+The ability to privately monitor user intent at the browser allows for the development of rich metrics for user attention. For example, it is known whether an impression has been served to an active tab, and measure the seconds of active user engagement. Attention is measured as viewed for content and ads only in the browser's active tab in real time. The Attention Value for the ad will be calculated based on incremental duration and pixels in view in proportion to relevant content, prior to any direct engagement with the ad. We will define further anonymous cost-per-action models as the system develops.
 
 In-device machine learning will match truly relevant ads to content from a level that middlemen with cookies and third party tracking are unable to achieve, regardless of how much the user data is extracted and monitored from external models. These external models are still unable simply track transactions well enough not to serve ads for products users have often already purchased. User engagement through genuine feedback mechanisms ensures that users that have opted in for BAT are getting the best possible product match that they're most likely to convert into a transaction. Ultimately it comes down to trust and respect with and for the user. By keeping the data on the device only, encrypting the data and shielding the identities of our users as a core principle, BAT forms a bond with users that proves that not only does their data hold value, it holds substantial value that has been ignored and exploited by the middlemen year after year in the current industry model. 
 
- Several scoring algorithms have been tried with the Brave donation \href{https://github.com/brave/ledger-client}{ledger system}, which automatically donates an amount proportional to the attention given to a website. 
+ Several scoring algorithms have been tried with the Brave donation \href{https://github.com/brave/ledger-publisher}{ledger system}, which automatically donates an amount proportional to the attention given to a website. 
 
 One of the metrics suggested is 5 total views of advertising content in an active window, for at least 5 seconds each. Hits of this nature would be calculated on a 30-day moving window. 
 
-Another suggested metric is the ``concave'' score. This is a score which rewards a publisher for a thresholded and bounded function of the amount of time spent with the open and active page.  For example, one ``point'' could be awarded for a two second view of the page, with two points for a 30 second view, and 3 for a 60 second view, with diminishing or bounded returns for longer views.
+Another suggested metric is the ``concave'' score\cite{PubClient}. This is a score which rewards a publisher for a thresholded and bounded function of the amount of time spent with the open and active page.  For example, one ``point'' could be awarded for a two second view of the page, with two points for a 30 second view, and 3 for a 60 second view, with diminishing or bounded returns for longer views.
 
 The present implementation of the concave score, which is being used to distribute attention metered donations to the publishers us a thresholded, time limited quadratic score. The formula is as follows:
 
 \[ score= \frac{-b + \sqrt{b^2 + 4a*duration}}{2a}\]
 
-where where $a=13000$, $b=11000 $ and $duration$ is measured in
+where $a=13000$, $b=11000 $ and $duration$ is measured in
 milliseconds. This gives a minimum threshold of 25 seconds to achieve
 a score of 1. The upper bound is set to be around 12 minutes of
 attention given to the article, with a maximum score for a given piece
@@ -386,7 +386,7 @@ Brave thus aims to reset the online ad-based Web ecosystem, giving advertisers, 
 \item{\href{https://www.linkedin.com/in/scottlocklin/}{Scott Locklin}, Senior Engineer, Co-founded Kerf Software. Machine Learning, Forecasting \& Quantitative Finance.}
 \item{\href{https://www.linkedin.com/in/richterbrad/}{Bradley Richter}, Head of Design, Previously: EFI/Fiery, Co-creator: eBeam \& Luidia, Percipo. Advising Circullio.}
 \item{\href{https://www.linkedin.com/in/catherine-corre-b2817/}{Catherine Corre}, Head of Communications, Previously: AOL, Netscape.}
-\item{\href{https://www.linkedin.com/in/marshallrose}{Marshall Rose}, Senior Engineer, PhD from UC Irvine, creator of SNMP and was with the Internet Engineering Task Force.}
+\item{\href{https://www.linkedin.com/in/marshallrose}{Marshall T. Rose}, Senior Engineer, PhD from UC Irvine, co-creator of SNMP and was with the Internet Engineering Task Force.}
 \item{\href{https://www.linkedin.com/in/brian-johnson-aaa11018/}{Brian Johnson}, Senior Engineer, was previously at JD Power and Korrelate.}
 \item{\href{https://www.linkedin.com/in/pureproductions/}{Luke Mulks}, Senior Ad-tech Specialist, for technical incident response, investigation, support \& issue resolution for ad tech and the Brave Browser. Developing/advising on ad tech and tracking threats that Brave shields users from (pr/blog).}
 \item{\href{https://www.linkedin.com/in/aubrey-keus-13b887/}{Aubrey Keus}, Senior Engineer, Previously: Pulse360.}
