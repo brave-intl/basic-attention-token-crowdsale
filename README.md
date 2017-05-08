@@ -1,1 +1,1 @@
-Crowdsale repo
+Crowdsale repo. Fixed capitalization issue.
