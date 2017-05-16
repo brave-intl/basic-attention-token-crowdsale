@@ -26,7 +26,7 @@ contract BAToken is StandardToken, SafeMath {
 
     // events
     event LogRefund(address indexed to, uint256 value);
-    event CreateBAT(address indexed _from, address indexed _to, uint256 _value);
+    event CreateBAT(address indexed _to, uint256 _value);
 
     // constructor
     function BAToken(
@@ -42,7 +42,7 @@ contract BAToken is StandardToken, SafeMath {
       fundingEndBlock = _fundingEndBlock;
       totalSupply = batFund;
       balances[batFundDeposit] = batFund;    // Deposit Brave Intl share
-      CreateBAT(0, batFundDeposit, batFund); // logs Brave Intl fund
+      CreateBAT(batFundDeposit, batFund); // logs Brave Intl fund
     }
 
     /// @dev Accepts ether and creates new BAT tokens.
@@ -58,7 +58,7 @@ contract BAToken is StandardToken, SafeMath {
       } else {
         totalSupply = checkedSupply;
         balances[msg.sender] += tokens;   // safeAdd not needed; bad semantics to use here
-        CreateBAT(0, msg.sender, tokens); // logs token creation
+        CreateBAT(msg.sender, tokens); // logs token creation
       }
     }
 
