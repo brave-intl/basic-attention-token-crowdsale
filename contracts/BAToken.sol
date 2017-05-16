@@ -7,26 +7,26 @@ contract BAToken is StandardToken, SafeMath {
     // metadata
     string public constant name = "Basic Attention Token";
     string public constant symbol = "BAT";
-    uint8 public constant decimals = 18;
-    string public version = "0.9";
+    uint256 public constant decimals = 18;
+    string public version = "0.91";
 
     // contracts
     address public ethFundDeposit;      // deposit address for ETH for Brave International
     address public batFundDeposit;      // deposit address for Brave internal use and Brave User Fund 
 
     // crowdsale parameters
-    bool public isFunding;              // State no longer important, but still useful for observation
+    bool public isFinalized;              // switched to true in operational state
     uint256 public fundingStartBlock;
     uint256 public fundingEndBlock;
-    uint256 public batFund = 300 * 10**24;   // 300m BAT reserved for Brave
-    uint256 public constant tokenExchangeRate = 4000; // 4000 BAT tokens per 1 ETH
-    uint256 public constant tokenCreationCap =  1000 * 10**24; 
-    uint256 public constant tokenCreationMin =  490 * 10**24; 
+    uint256 public constant batFund = 300 * (10**6) * 10**decimals;   // 300m BAT reserved for Brave Intl use
+    uint256 public constant tokenExchangeRate = 4000; // 4000 BAT tokens per 1 ETH: THIS MAY CHANGE AT DEPLOY TIME
+    uint256 public constant tokenCreationCap =  1000 * (10**6) * 10**decimals; 
+    uint256 public constant tokenCreationMin =  490 * (10**6) * 10**decimals; 
 
 
     // events
     event LogRefund(address indexed to, uint256 value);
-
+    event CreateBAT(address indexed _from, address indexed _to, uint256 _value);
 
     // constructor
     function BAToken(
@@ -35,55 +35,56 @@ contract BAToken is StandardToken, SafeMath {
         uint256 _fundingStartBlock,
         uint256 _fundingEndBlock)
     {
-      isFunding = true;                      //controls crowdsale state
+      isFinalized = false;                   //controls pre through crowdsale state
       ethFundDeposit = _ethFundDeposit;
       batFundDeposit = _batFundDeposit;
       fundingStartBlock = _fundingStartBlock;
       fundingEndBlock = _fundingEndBlock;
       totalSupply = batFund;
-      balances[batFundDeposit] = batFund;    //Deposit optimistic Brave share
+      balances[batFundDeposit] = batFund;    // Deposit Brave Intl share
+      CreateBAT(0, batFundDeposit, batFund); // logs Brave Intl fund
     }
 
     /// @dev Accepts ether and creates new BAT tokens.
     function createTokens() payable external {
-      if (!isFunding) throw;
+      if (isFinalized) throw;
       if (block.number < fundingStartBlock) throw;
       if (block.number > fundingEndBlock) throw;
       if (msg.value == 0) throw;
       uint256 tokens = safeMult(msg.value, tokenExchangeRate); // check that we're not over totals
-      uint256 tmpSupply = safeAdd(totalSupply, tokens);
-      if(tokenCreationCap >= tmpSupply) {    // odd fractions won't be found
-        totalSupply += tokens;
-        balances[msg.sender] += tokens;
-        Transfer(0, msg.sender, tokens); // logs transfer
-      } else {
+      uint256 checkedSupply = safeAdd(totalSupply, tokens);
+      if(tokenCreationCap < checkedSupply) {    // odd fractions won't be found
         throw;                           // they need to get their money back if something goes wrong
+      } else {
+        totalSupply = checkedSupply;
+        balances[msg.sender] += tokens;   // safeAdd not needed; bad semantics to use here
+        CreateBAT(0, msg.sender, tokens); // logs token creation
       }
     }
 
-    /// @dev Ends the funding period and issues new BAT tokens to the User Growth Fund.
+    /// @dev Ends the funding period and sends the ETH home
     function finalize() external {
-      if (!isFunding) throw;
-      if (msg.sender != ethFundDeposit) throw; // this locks finalize to the ultimate ETH owner
-      if ((block.number <= fundingEndBlock ||
-           totalSupply < tokenCreationMin) &&
-          totalSupply < tokenCreationCap) throw;
+      if (isFinalized) throw;
+      if (msg.sender != ethFundDeposit) throw; // locks finalize to the ultimate ETH owner
+      if(totalSupply < tokenCreationMin) throw;      // have to sell minimum to move to operational
+      if(block.number <= fundingEndBlock && totalSupply != tokenCreationCap) throw;
       // move to operational
-      isFunding = false;
+      isFinalized = true;
       if(!ethFundDeposit.send(this.balance)) throw;  // send the eth to Brave International
     }
 
     /// @dev Allows contributors to recover their ether in the case of a failed funding campaign.
     function refund() external {
-      if(!isFunding) throw;                       // prevents refund if operational
+      if(isFinalized) throw;                       // prevents refund if operational
       if (block.number <= fundingEndBlock) throw; // prevents refund until sale period is over
       if(totalSupply >= tokenCreationMin) throw;  // no refunds if we sold enough
-      var batVal = balances[msg.sender];
+      if(msg.sender == batFundDeposit) throw;    // Brave Intl not entitled to a refund
+      uint256 batVal = balances[msg.sender];
       if (batVal == 0) throw;
       balances[msg.sender] = 0;
-      totalSupply -= batVal;
-      var ethVal = batVal / tokenExchangeRate;
-      LogRefund(msg.sender, ethVal);
+      totalSupply = safeSubtract(totalSupply, batVal); // extra safe
+      uint256 ethVal = batVal / tokenExchangeRate;     // should be safe; previous throws covers edges 
+      LogRefund(msg.sender, ethVal);               // log it 
       if (!msg.sender.send(ethVal)) throw;       // if you're using a contract; make sure it works with .send gas limits
     }
 
