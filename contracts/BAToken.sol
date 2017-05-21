@@ -18,10 +18,10 @@ contract BAToken is StandardToken, SafeMath {
     bool public isFinalized;              // switched to true in operational state
     uint256 public fundingStartBlock;
     uint256 public fundingEndBlock;
-    uint256 public constant batFund = 300 * (10**6) * 10**decimals;   // 300m BAT reserved for Brave Intl use
-    uint256 public constant tokenExchangeRate = 4000; // 4000 BAT tokens per 1 ETH: THIS MAY CHANGE AT DEPLOY TIME
-    uint256 public constant tokenCreationCap =  1000 * (10**6) * 10**decimals; 
-    uint256 public constant tokenCreationMin =  490 * (10**6) * 10**decimals; 
+    uint256 public constant batFund = 500 * (10**6) * 10**decimals;   // 500m BAT reserved for Brave Intl use
+    uint256 public constant tokenExchangeRate = 5500; // 5500 BAT tokens per 1 ETH: THIS MAY CHANGE AT DEPLOY TIME
+    uint256 public constant tokenCreationCap =  1500 * (10**6) * 10**decimals; 
+    uint256 public constant tokenCreationMin =  750 * (10**6) * 10**decimals; 
 
 
     // events
