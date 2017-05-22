@@ -1,6 +1,6 @@
 # Introducing a decentralized, transparent digital ad exchange based on Ethereum Blockchain. #
 
-## Problem ##
+## Problem: ##
 
 Digital advertising is broken. The marketplace for online advertising, once dominated by advertisers, publishers and users, has become overrun by "middleman" ad exchanges,  audience  segmentation,  complicated  behavioral  and  cross-device  user tracking,  and  opaque  cross-party  sharing  through  data  management  platforms. Users  face  unprecedented  levels  of  malvertisements  and  privacy  violations.   Mobile advertising results in as much as $23 per month in data charges on the average
 user’s data plan, slow page loads, and as much as 21% less battery life.  In response, over 600 million mobile devices and desktops (globally) employ ad blocking software and this number is growing.  Traditional publishers have lost approximately 66% of their revenue over the past decade, adjusted for inflation.  Publishers face falling  revenue,  users  feel  increasingly  violated,  and  advertisers’  ability  to  assess effectiveness is diminished.  
