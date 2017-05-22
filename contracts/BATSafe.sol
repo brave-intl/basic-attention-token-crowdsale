@@ -7,7 +7,7 @@ contract BATSafe {
   address public BAT;
   uint256 public constant exponent = 10**18;
 
-  function BATSafe(address _BAT) {
+  function BATSafe(address _BAT) {                // sample allocations
     BAT = _BAT;
     unlockDate = now + 15 minutes;
     allocations[0xB9bc094AC55d5696E888B942Ee879E55A2B2a586] = 100;
