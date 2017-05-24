@@ -9,7 +9,7 @@ contract BATSafe {
 
   function BATSafe(address _BAT) {                // sample allocations to testnet addresses
     BAT = _BAT;
-    unlockDate = now + 6 months;
+    unlockDate = now + 6 * 30 days;
     allocations[0xB9bc094AC55d5696E888B942Ee879E55A2B2a586] = 100;
     allocations[0x1ff55E3F22585A61401396E8D5248e977E305BDf] = 10;
     allocations[0x990F1870e96ffa1427A6a72FA82040429B333812] = 15;
