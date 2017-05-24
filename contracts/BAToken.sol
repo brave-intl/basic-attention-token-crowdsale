@@ -8,7 +8,7 @@ contract BAToken is StandardToken, SafeMath {
     string public constant name = "Basic Attention Token";
     string public constant symbol = "BAT";
     uint256 public constant decimals = 18;
-    string public version = "0.91";
+    string public version = "0.96";
 
     // contracts
     address public ethFundDeposit;      // deposit address for ETH for Brave International
@@ -19,13 +19,13 @@ contract BAToken is StandardToken, SafeMath {
     uint256 public fundingStartBlock;
     uint256 public fundingEndBlock;
     uint256 public constant batFund = 500 * (10**6) * 10**decimals;   // 500m BAT reserved for Brave Intl use
-    uint256 public constant tokenExchangeRate = 5500; // 5500 BAT tokens per 1 ETH: THIS MAY CHANGE AT DEPLOY TIME
+    uint256 public constant tokenExchangeRate = 8000; // 8000 BAT tokens per 1 ETH: THIS MAY CHANGE AT DEPLOY TIME
     uint256 public constant tokenCreationCap =  1500 * (10**6) * 10**decimals; 
     uint256 public constant tokenCreationMin =  750 * (10**6) * 10**decimals; 
 
 
     // events
-    event LogRefund(address indexed to, uint256 value);
+    event LogRefund(address indexed _to, uint256 _value);
     event CreateBAT(address indexed _to, uint256 _value);
 
     // constructor
