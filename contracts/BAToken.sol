@@ -12,7 +12,7 @@ contract BAToken is StandardToken, SafeMath {
 
     // contracts
     address public ethFundDeposit;      // deposit address for ETH for Brave International
-    address public batFundDeposit;      // deposit address for Brave internal use and Brave User Fund 
+    address public batFundDeposit;      // deposit address for Brave internal use and Brave User Fund
 
     // crowdsale parameters
     bool public isFinalized;              // switched to true in operational state
@@ -20,8 +20,8 @@ contract BAToken is StandardToken, SafeMath {
     uint256 public fundingEndBlock;
     uint256 public constant batFund = 500 * (10**6) * 10**decimals;   // 500m BAT reserved for Brave Intl use
     uint256 public constant tokenExchangeRate = 8000; // 8000 BAT tokens per 1 ETH: THIS MAY CHANGE AT DEPLOY TIME
-    uint256 public constant tokenCreationCap =  1500 * (10**6) * 10**decimals; 
-    uint256 public constant tokenCreationMin =  750 * (10**6) * 10**decimals; 
+    uint256 public constant tokenCreationCap =  1500 * (10**6) * 10**decimals;
+    uint256 public constant tokenCreationMin =  750 * (10**6) * 10**decimals;
 
 
     // events
@@ -83,8 +83,8 @@ contract BAToken is StandardToken, SafeMath {
       if (batVal == 0) throw;
       balances[msg.sender] = 0;
       totalSupply = safeSubtract(totalSupply, batVal); // extra safe
-      uint256 ethVal = batVal / tokenExchangeRate;     // should be safe; previous throws covers edges 
-      LogRefund(msg.sender, ethVal);               // log it 
+      uint256 ethVal = batVal / tokenExchangeRate;     // should be safe; previous throws covers edges
+      LogRefund(msg.sender, ethVal);               // log it
       if (!msg.sender.send(ethVal)) throw;       // if you're using a contract; make sure it works with .send gas limits
     }
 

@@ -24,7 +24,3 @@ contract BATSafe {
   }
 
 }
-
-
-
-
