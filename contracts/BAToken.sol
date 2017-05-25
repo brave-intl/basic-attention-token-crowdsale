@@ -35,6 +35,9 @@ contract BAToken is StandardToken, SafeMath {
         uint256 _fundingStartBlock,
         uint256 _fundingEndBlock)
     {
+      if (_fundingStartBlock < block.number) throw;
+      if (_fundingStartBlock >= _fundingEndBlock) throw;
+
       isFinalized = false;                   //controls pre through crowdsale state
       ethFundDeposit = _ethFundDeposit;
       batFundDeposit = _batFundDeposit;
