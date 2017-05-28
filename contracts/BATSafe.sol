@@ -49,7 +49,3 @@ contract BATSafe {
   }
 
 }
-
-
-
-

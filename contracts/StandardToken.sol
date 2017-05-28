@@ -21,8 +21,8 @@ contract StandardToken is Token {
         balances[_to] += _value;
         Transfer(msg.sender, _to, _value);
         return true;
-      } else { 
-        return false; 
+      } else {
+        return false;
       }
     }
 
@@ -33,8 +33,8 @@ contract StandardToken is Token {
         allowed[_from][msg.sender] -= _value;
         Transfer(_from, _to, _value);
         return true;
-      } else { 
-        return false; 
+      } else {
+        return false;
       }
     }
 
@@ -53,6 +53,5 @@ contract StandardToken is Token {
     }
 
     mapping (address => uint256) balances;
-    mapping (address => mapping (address => uint256)) allowed;    
+    mapping (address => mapping (address => uint256)) allowed;
 }
-
