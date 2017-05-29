@@ -17,10 +17,10 @@ contract BATSafe {
   }
 
   function unlock() external {
-    if(now < unlockDate) throw;
+    if (now < unlockDate) throw;
     uint256 entitled = allocations[msg.sender];
     allocations[msg.sender] = 0;
-    if(!StandardToken(BAT).transfer(msg.sender, entitled * exponent)) throw;
+    if (!StandardToken(BAT).transfer(msg.sender, entitled * exponent)) throw;
   }
 
 }
