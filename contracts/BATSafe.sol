@@ -1,6 +1,6 @@
 pragma solidity ^0.4.10;
 import './StandardToken.sol';
-// presently requires 133,650,000 BAT deposited here
+// requires 133,650,000 BAT deposited here
 contract BATSafe {
   mapping (address => uint256) allocations;
   uint256 public unlockDate;
@@ -49,7 +49,3 @@ contract BATSafe {
   }
 
 }
-
-
-
-
