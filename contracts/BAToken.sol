@@ -67,19 +67,19 @@ contract BAToken is StandardToken, SafeMath {
     function finalize() external {
       if (isFinalized) throw;
       if (msg.sender != ethFundDeposit) throw; // locks finalize to the ultimate ETH owner
-      if(totalSupply < tokenCreationMin) throw;      // have to sell minimum to move to operational
-      if(block.number <= fundingEndBlock && totalSupply != tokenCreationCap) throw;
+      if (totalSupply < tokenCreationMin) throw;      // have to sell minimum to move to operational
+      if (block.number <= fundingEndBlock && totalSupply != tokenCreationCap) throw;
       // move to operational
       isFinalized = true;
-      if(!ethFundDeposit.send(this.balance)) throw;  // send the eth to Brave International
+      if (!ethFundDeposit.send(this.balance)) throw;  // send the eth to Brave International
     }
 
     /// @dev Allows contributors to recover their ether in the case of a failed funding campaign.
     function refund() external {
-      if(isFinalized) throw;                       // prevents refund if operational
+      if (isFinalized) throw;                       // prevents refund if operational
       if (block.number <= fundingEndBlock) throw; // prevents refund until sale period is over
-      if(totalSupply >= tokenCreationMin) throw;  // no refunds if we sold enough
-      if(msg.sender == batFundDeposit) throw;    // Brave Intl not entitled to a refund
+      if (totalSupply >= tokenCreationMin) throw;  // no refunds if we sold enough
+      if (msg.sender == batFundDeposit) throw;    // Brave Intl not entitled to a refund
       uint256 batVal = balances[msg.sender];
       if (batVal == 0) throw;
       balances[msg.sender] = 0;
