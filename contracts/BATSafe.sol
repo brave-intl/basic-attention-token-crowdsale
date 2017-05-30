@@ -1,4 +1,4 @@
-pragma solidity ^0.4.10;
+pragma solidity ^0.4.11;
 import './StandardToken.sol';
 // requires 133,650,000 BAT deposited here
 contract BATSafe {
