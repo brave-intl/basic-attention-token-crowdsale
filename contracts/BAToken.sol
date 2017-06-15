@@ -23,6 +23,11 @@ contract BAToken is StandardToken, SafeMath {
     uint256 public constant tokenCreationCap =  1500 * (10**6) * 10**decimals;
     uint256 public constant tokenCreationMin =  675 * (10**6) * 10**decimals;
 
+    // Hunting Whales in Furtherance of Egalitarian ICOs and a More Fair World
+    // https://medium.com/@shitoshi/hunting-whales-in-furtherance-of-egalitarian-icos-and-a-more-fair-world-cd5f7ef41555
+    // Borrowed from Bancor https://github.com/bancorprotocol/contracts/blob/master/solidity/contracts/CrowdsaleController.sol#L18
+    uint256 public constant MAX_GAS_PRICE = 50000000000 wei;    // maximum gas price for contribution transactions
+    uint256 public constant MAX_ETHER = 10 ether;              // maximum Ether per transaction
 
     // events
     event LogRefund(address indexed _to, uint256 _value);
@@ -45,8 +50,24 @@ contract BAToken is StandardToken, SafeMath {
       CreateBAT(batFundDeposit, batFund);  // logs Brave Intl fund
     }
 
+    // Borrowed from Bancor https://github.com/bancorprotocol/contracts/blob/master/solidity/contracts/CrowdsaleController.sol#L61
+    // verifies that the gas price is lower than MAX_GAS_PRICE
+    modifier validGasPrice() {
+        assert(tx.gasprice <= MAX_GAS_PRICE);
+        _;
+    }
+
+    // verifies that the gas price is lower than MAX_ETHER
+    modifier validEther() {
+        assert(msg.value <= MAX_ETHER);
+        _;
+    }
+
     /// @dev Accepts ether and creates new BAT tokens.
-    function createTokens() payable external {
+    function createTokens() payable external
+      validGasPrice // Ensure a whale is not cutting in front of everyone else by spending lots of gas!!
+      validEther // Ensure a whale is not buying up all the tokens!!!
+    {
       if (isFinalized) throw;
       if (block.number < fundingStartBlock) throw;
       if (block.number > fundingEndBlock) throw;
