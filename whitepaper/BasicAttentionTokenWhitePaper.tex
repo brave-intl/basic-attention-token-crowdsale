@@ -904,51 +904,54 @@ currencies. Overall though, the holders of inactive tokens have
 standard ways of evaluating future utility of the tokens in terms of
 modern risk management theory.
 
-Since tokens do not bear interest, there is a discounted term
-associated with holding a position of size  $z^{\textrm{BAT}}_{t}$ in them.
 
-\[ -R S^{\frac{\$}{\textrm{BAT}}} z^{\textrm{BAT}}_{t} \] 
-where $R$ is the interest rate discounting in the legacy currency.
+Rational token holders expect future returns from a position in \textrm{BAT} to be proportional to the volatility of the position over the time period in question,  scaled by a risk aversion term $\gamma$,
 
-If we consider the future expected value of the \textrm{BAT} holdings as the
-sum of the future expected value of the position in  \textrm{BAT}
-\[ ||S^{\frac{\$}{\textrm{BAT}}}{t+1}|| z^{\textrm{BAT}}_{t}\]
+\[\gamma \sigma^{2}(S^{\frac{\$}{\textrm{BAT}}}_{t+1}) z^{\textrm{BAT}}_{t} \]
 
-with this discounted interest rate term (where $R$ is the discounting operator),
-and the volatility of the future position in \textrm{BAT} scaled by a risk
-aversion term $\gamma$, we reach the efficient frontier from modern portfolio
-theory.
+If we consider the future expected exchange rate:
 
-\[ ||S^{\frac{\$}{\textrm{BAT}}}_{t+1}|| z^{\textrm{BAT}}_{t} -R (S^{\frac{\$}{\textrm{BAT}}}_{t}) z^{\textrm{BAT}}_{t} + \gamma \sigma^{2}(||S^{\frac{\$}{\textrm{BAT}}}_{t+1}||) z^{\textrm{BAT}}_{t} =0\]
+\[ ||S^{\frac{\$}{\textrm{BAT}}}_{t+1}|| \]
 
-Using this standard result, we can solve for the optimal number of
-tokens held by an individual during a given time period.
+The period \textrm{t} exchange rate is discounted by the risk free exchange rate operator ($R$) to make it comparable to the future expected exchange rate, we get the time discounted exchange rate:
 
-\[ z^{\textrm{BAT}}_{t} =\frac{||S^{\frac{\$}{\textrm{BAT}}}_{t+1}|| -R( S^{\frac{\$}{\textrm{BAT}}}_{t})}{ \gamma \sigma^{2}(||S^{\frac{\$}{\textrm{BAT}}}_{t+1}||) } \]
+\[ -R S^{\frac{\$}{\textrm{BAT}}}_{t}  \] 
+
+The difference in these two values are equivaluent to the expected returns. We reach the efficient frontier from modern portfolio theory thusly:
+
+\[ ||S^{\frac{\$}{\textrm{BAT}}}_{t+1}||  -R (S^{\frac{\$}{\textrm{BAT}}}_{t})  = \gamma \sigma^{2}(S^{\frac{\$}{\textrm{BAT}}}_{t+1}) z^{\textrm{BAT}}_{t}\]
+
+Using this standard result, we can solve for the optimal number of tokens held by an
+individual during a given time period.
+
+\[ z^{\textrm{BAT}}_{t} =\frac{||S^{\frac{\$}{\textrm{BAT}}}_{t+1}|| -R( S^{\frac{\$}{\textrm{BAT}}}_{t})}{ \gamma \sigma^{2}(S^{\frac{\$}{\textrm{BAT}}}_{t+1}) } \]
 
 If we consider all of the people holding \textrm{BAT} at a given time interval $t$
-we get the economically efficient number of \textrm{BAT} held for later use.
+to have the same risk preferences, we get the economically efficient number of \textrm{BAT} held for later use.
 
-\[ Z^{\textrm{BAT}}_{t} = N_{t} z^{\textrm{BAT}}_{t} =\frac{||S^{\frac{\$}{\textrm{BAT}}}_{t+1}|| z^{\textrm{BAT}}_{t} -R(S^{\frac{\$}{\textrm{BAT}}}_{t})}{ \frac{\gamma}{N_{t}} \sigma^{2}(||S^{\frac{\$}{\textrm{BAT}}}_{t+1}||) } \]
+\[ Z^{\textrm{BAT}}_{t} = N_{t} z^{\textrm{BAT}}_{t} =\frac{||S^{\frac{\$}{\textrm{BAT}}}_{t+1}|| z^{\textrm{BAT}}_{t} -R(S^{\frac{\$}{\textrm{BAT}}}_{t})}{ \frac{\gamma}{N_{t}} \sigma^{2}(S^{\frac{\$}{\textrm{BAT}}}_{t+1}) } \]
 
 Since this value can't be negative, we assume that people who hold \textrm{BAT}
-have the position that
+have the position that expected future exchange rate is
 
 \[ ||S^{\frac{\$}{\textrm{BAT}}}_{t+1}|| \geq R( S^{\frac{\$}{\textrm{BAT}}}_{t})\]
 
 hence, using our above relationship, we get the relationship between the expected future value of the \textrm{BAT}, the interest rate and the velocity of transfers in the \textrm{BAT} economy:
 
-\[R^{-1} (||S^{\frac{\$}{\textrm{BAT}}}_{t+1}||) \geq \frac{T^{\textrm{BAT}}_{t}}{M^{\textrm{BAT}} V^{\textrm{BAT}}_{t}} \]
+\[R^{-1} (||S^{\frac{\$}{\textrm{BAT}}}_{t+1}||) \geq \frac{T^{\textrm{BAT*}}_{t}}{M^{\textrm{BAT}} V^{\textrm{BAT}}_{t}} \]
 
 So, people hold \textrm{BAT} if the discounted expected value exceeds the
 hypothetical value of the current exchange rate. So, the exchange rate
 as a function of future expected value of \textrm{BAT} is
 
-\[\tag{2} S^{\frac{\$}{\textrm{BAT}}}_{t} = R^{-1} (||S^{\frac{\$}{\textrm{BAT}}}_{t+1}|| -\frac{\gamma}{N_t}Z^{\textrm{BAT}}_{t} \sigma^{2}(||S^{\frac{\$}{\textrm{BAT}}}_{t+1} ||) )\]
+\[\tag{2} S^{\frac{\$}{\textrm{BAT}}}_{t} = R^{-1} (||S^{\frac{\$}{\textrm{BAT}}}_{t+1}|| -\frac{\gamma}{N_t}Z^{\textrm{BAT}}_{t} \sigma^{2}(S^{\frac{\$}{\textrm{BAT}}}_{t+1} ) )\]
     
 Thus, the \textrm{BAT} holdings are the discounted expected future exchange
 rate minus the risk premium for the uncertainty in future value of the
-\textrm{BAT}.
+\textrm{BAT}, as expected.
+
+
+
 
 If the model holds, {1} and {2} can be used to define supply and
 demand for \textrm{BAT}. Since $M^{\textrm{BAT}}$ is not time dependent in the case of \textrm{BAT}, the
