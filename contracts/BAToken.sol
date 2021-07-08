@@ -5,7 +5,7 @@ import "./SafeMath.sol";
 contract BAToken is StandardToken, SafeMath {
 
     // metadata
-    string public constant name = "Basic Attention Token";
+    string public constant name = "Basic Attention Token Ropsten";
     string public constant symbol = "BAT";
     uint256 public constant decimals = 18;
     string public version = "1.0";
@@ -20,8 +20,8 @@ contract BAToken is StandardToken, SafeMath {
     uint256 public fundingEndBlock;
     uint256 public constant batFund = 500 * (10**6) * 10**decimals;   // 500m BAT reserved for Brave Intl use
     uint256 public constant tokenExchangeRate = 6400; // 6400 BAT tokens per 1 ETH
-    uint256 public constant tokenCreationCap =  1500 * (10**6) * 10**decimals;
-    uint256 public constant tokenCreationMin =  675 * (10**6) * 10**decimals;
+    uint256 public constant tokenCreationCap =  500 * (10**6) * 10**decimals;
+    uint256 public constant tokenCreationMin =  500 * (10**6) * 10**decimals;
 
 
     // events
